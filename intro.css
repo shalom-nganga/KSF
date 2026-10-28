@@ -1,0 +1,33 @@
+/* ===== intro.css : Welcome section on the homepage (load after style.css) ===== */
+.wl{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,.8fr) minmax(0,1fr);
+  gap:clamp(18px,3vw,28px);
+  align-items:stretch;
+}
+.wl-main{position:relative;min-height:460px;border-radius:30px;overflow:hidden;background:var(--navy)}
+.wl-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wl-tag{
+  position:absolute;left:0;bottom:16%;z-index:2;margin:0;
+  display:grid;gap:2px;
+  padding:20px 30px 22px 24px;
+  background:#fff;border-radius:0 26px 26px 0;
+  box-shadow:0 14px 36px rgba(38,43,78,.18);
+}
+.wl-tag span{font:600 1rem var(--h);color:var(--navy)}
+.wl-tag b{font:800 clamp(1.5rem,2.4vw,2rem)/1.08 var(--h);letter-spacing:-.02em;color:var(--or2);max-width:9ch}
+.wl-stack{display:grid;grid-template-rows:1fr 1fr;gap:clamp(18px,3vw,28px)}
+.wl-stack img{width:100%;height:100%;min-height:200px;object-fit:cover;border-radius:26px}
+.wl-text{align-self:center}
+.wl-text p{margin:0 0 1.1em;color:var(--mute);line-height:1.75}
+.wl-text .btn{margin-top:6px}
+@media (max-width:980px){
+  .wl{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .wl-text{grid-column:1/-1}
+}
+@media (max-width:620px){
+  .wl{grid-template-columns:1fr}
+  .wl-main{min-height:380px}
+  .wl-stack{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .wl-stack img{min-height:150px;aspect-ratio:1/1}
+}

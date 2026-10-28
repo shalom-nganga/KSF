@@ -1,0 +1,89 @@
+/* ===== about.css : used by about.html (load after style.css) ===== */
+
+/* current page in the menu */
+nav a[aria-current="page"]{background:var(--navy);color:#fff}
+
+/* page header */
+.abp-head{padding:clamp(40px,7vw,88px) 0 clamp(40px,6vw,72px)}
+.abp-head h1{max-width:14ch;font-size:clamp(2.7rem,7.4vw,5.6rem)}
+.abp-head .lede{max-width:36rem}
+.abp-trio{
+  display:grid;
+  grid-template-columns:1fr 1.15fr 1fr;
+  gap:clamp(12px,2vw,20px);
+  align-items:end;
+  margin-top:clamp(32px,5vw,52px);
+}
+.abp-trio img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:26px}
+.abp-trio img:nth-child(2){aspect-ratio:3/4.5}
+@media (max-width:600px){
+  .abp-trio{grid-template-columns:1fr 1fr}
+  .abp-trio img:nth-child(3){display:none}
+}
+
+/* story blocks */
+.ab{display:grid;gap:clamp(56px,8vw,104px)}
+.ab h2{font-size:clamp(1.9rem,4vw,3rem);line-height:1.05;margin:0 0 16px}
+.ab p{color:var(--mute);font-size:1.05rem;line-height:1.75;margin:0;max-width:36rem}
+.ab img{display:block;width:100%}
+
+.ab-journey{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(24px,5vw,64px);
+  align-items:center;
+}
+.ab-road{width:100%;height:auto;max-height:340px}
+
+.ab-mission{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  background:var(--navy);
+  border-radius:32px;
+  overflow:hidden;
+}
+.ab-mission img{height:100%;min-height:320px;object-fit:cover}
+.ab-mission .ab-txt{padding:clamp(28px,5vw,64px);align-self:center}
+.ab-mission h2{color:#fff}
+.ab-mission p{color:rgba(255,255,255,.86)}
+
+.ab-mbci{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);
+  gap:clamp(24px,5vw,64px);
+  align-items:center;
+}
+.ab-mbci img{border-radius:28px;aspect-ratio:4/3;object-fit:cover}
+.ab-mbci h2{font-size:clamp(1.7rem,3vw,2.4rem)}
+
+.ab-tent img{
+  height:clamp(240px,36vw,420px);
+  object-fit:cover;
+  border-radius:32px;
+}
+.ab-tent-card{
+  position:relative;
+  max-width:46rem;
+  margin:-72px auto 0;
+  padding:clamp(24px,4vw,40px);
+  background:#fff;
+  border-radius:26px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(38,43,78,.14);
+}
+.ab-tent-card h2{font-size:clamp(1.7rem,3vw,2.4rem)}
+.ab-tent-card p{margin:0 auto}
+
+@media (max-width:860px){
+  .ab-journey,.ab-mission,.ab-mbci{grid-template-columns:1fr}
+  .ab-mission img{min-height:240px;max-height:320px}
+  .ab-tent-card{margin:-48px 16px 0}
+}
+
+/* closing call to action */
+.abp-cta{display:grid;gap:14px;padding:clamp(28px,5vw,56px);border-radius:36px;background:var(--navy);color:#fff}
+.abp-cta h2{color:#fff}
+.abp-cta p{margin:0;color:#c9cbe0;font-size:1.1rem}
+.abp-cta .row{margin-top:10px}
+.abp-cta .btn.o{color:#fff;border-color:rgba(255,255,255,.7)}
+.abp-cta .btn.o:hover{background:#fff;color:var(--navy)}
