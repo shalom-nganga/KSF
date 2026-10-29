@@ -16,7 +16,7 @@ document.addEventListener('click', e => {
 
 /* language: same EN / SW switch as the homepage, remembered between pages */
 const SW = {
-  home: 'Mwanzo', about: 'Kuhusu Sisi', kev: 'Matukio ya KSF', min: 'Huduma', gift: 'Duka la Zawadi',
+  home: 'Mwanzo', about: 'Kuhusu Sisi', section: 'Ushirika wa Sehemu', kev: 'Matukio ya KSF', min: 'Huduma', gift: 'Duka la Zawadi',
   contact: 'Wasiliana', careers: 'Nafasi za Kazi', give: 'Toa', plan: 'Panga ziara yako', plan2: 'Tembelea', wl: 'Tazama moja kwa moja',
   abt: 'Kuhusu sisi',
   ah1: 'Kanisa linalompenda Mungu na watu.',

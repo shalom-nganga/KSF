@@ -1,0 +1,38 @@
+nav a[aria-current="page"]{background:var(--navy);color:#fff}
+
+.contact-head{padding:clamp(42px,8vw,96px) 0 clamp(28px,5vw,56px);background:linear-gradient(135deg,var(--sand),var(--iv) 62%)}
+.contact-head h1{max-width:13ch;font-size:clamp(2.8rem,7.5vw,5.9rem)}
+.contact-head .lede{max-width:39rem}
+.contact-content{padding-top:0}
+.contact-layout{display:grid;gap:clamp(28px,5vw,64px);align-items:start}
+@media(min-width:900px){.contact-layout{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
+.contact-details{display:grid;gap:14px}
+.contact-card{display:flex;align-items:center;gap:18px;padding:22px;border:1px solid var(--line);border-radius:24px;background:#fff}
+.contact-icon{display:grid;flex:none;place-items:center;width:50px;height:50px;border-radius:17px;background:var(--sand);color:var(--or2);font:700 1.35rem var(--h)}
+.contact-card h2{margin:0 0 5px;color:var(--navy);font-size:1.16rem;letter-spacing:-.01em}
+.contact-card p{margin:0;color:var(--mute)}
+.contact-card a{font-weight:700;color:var(--ink);overflow-wrap:anywhere}
+.contact-card .contact-action{display:inline-flex;align-items:center;gap:7px;margin-top:8px;color:var(--or2);font-size:.88rem}
+.contact-extra{padding:clamp(24px,4vw,36px);border-radius:26px;background:var(--navy);color:#fff}
+.contact-extra h2{font-size:1.7rem}
+.contact-extra p{margin:10px 0 18px;color:#d4d6ea}
+.contact-extra>a{font-weight:700;color:#fff}
+.contact-extra>a span{color:#ff9b59}
+.contact-form-card{padding:clamp(24px,4.5vw,44px);border:1px solid var(--line);border-radius:30px;background:#fff;box-shadow:0 18px 48px rgba(38,43,78,.08)}
+.contact-form-card>h2{font-size:clamp(1.7rem,3vw,2.25rem)}
+.contact-form-card>p{margin:12px 0 24px;color:var(--mute)}
+#contact-form{display:grid;gap:17px}
+.field-pair{display:grid;gap:17px}
+@media(min-width:600px){.field-pair{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:7px}
+.field label{font-size:.86rem;font-weight:700;color:var(--navy)}
+.field label span{color:var(--or2)}
+.field input,.field textarea{width:100%;min-height:48px;padding:12px 14px;border:1px solid rgba(38,43,78,.2);border-radius:13px;background:#fff;color:var(--ink);font:400 1rem/1.5 var(--b)}
+.field textarea{min-height:150px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:3px solid rgba(242,106,16,.22);border-color:var(--or)}
+.form-note,.form-fallback{margin:0;color:var(--mute);font-size:.8rem;line-height:1.55}
+#contact-form .btn{justify-self:start}
+.form-status:empty{display:none}
+.form-status{margin:0;color:var(--navy);font-size:.9rem}
+.form-fallback a{color:var(--or2);font-weight:700}
+@media(max-width:480px){.contact-card{padding:17px}.contact-form-card{border-radius:24px}}

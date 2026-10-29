@@ -1,0 +1,29 @@
+nav a[aria-current="page"]{background:var(--navy);color:#fff}
+
+.ministry-head{padding:clamp(42px,8vw,96px) 0 clamp(38px,6vw,72px);background:linear-gradient(135deg,var(--sand),var(--iv) 62%)}
+.ministry-head h1{max-width:13ch;font-size:clamp(2.8rem,7.5vw,5.9rem)}
+.ministry-head .lede{max-width:40rem}
+.ministry-head .btn{margin-top:4px}
+.ministry-directory{padding-top:0}
+.ministry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:18px;align-items:start}
+.ministry-card{overflow:hidden;border:1px solid var(--line);border-radius:26px;background:#fff;box-shadow:0 12px 32px rgba(38,43,78,.06);transition:transform .25s,box-shadow .25s}
+.ministry-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(38,43,78,.12)}
+.ministry-card summary{position:relative;display:flex;align-items:center;gap:18px;min-height:154px;padding:20px;list-style:none;cursor:pointer}
+.ministry-card summary::-webkit-details-marker{display:none}
+.ministry-card summary>img{flex:none;width:108px;height:108px;border-radius:20px;object-fit:cover;background:var(--sand)}
+.ministry-copy{display:grid;gap:5px;padding-right:24px}
+.ministry-type{color:var(--or2);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.ministry-card h3{color:var(--navy);font-size:1.28rem}
+.ministry-teaser{color:var(--mute);font-size:.88rem;line-height:1.5}
+.ministry-toggle{position:absolute;right:17px;top:17px;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--sand);color:var(--navy);font-size:1.2rem;font-weight:500;transition:transform .2s,background .2s,color .2s}
+.ministry-card[open] .ministry-toggle{transform:rotate(45deg);background:var(--navy);color:#fff}
+.ministry-card summary:focus-visible{outline:3px solid var(--or);outline-offset:-4px;border-radius:25px}
+.ministry-details{padding:0 24px 23px;border-top:1px solid var(--line)}
+.ministry-details p{margin:17px 0 0;color:var(--mute);font-size:.96rem;line-height:1.7}
+.ministry-cta{display:grid;gap:14px;padding:clamp(28px,5vw,52px);border-radius:32px;background:var(--navy);color:#fff}
+.ministry-cta h2{color:#fff}
+.ministry-cta p{margin:0;color:#d4d6ea;font-size:1.05rem}
+.ministry-cta .row{margin-top:8px}
+.ministry-cta .btn.o{color:#fff;border-color:rgba(255,255,255,.7)}
+.ministry-cta .btn.o:hover{background:#fff;color:var(--navy)}
+@media(max-width:480px){.ministry-card summary{gap:13px;padding:16px}.ministry-card summary>img{width:82px;height:88px;border-radius:16px}.ministry-card h3{font-size:1.13rem}.ministry-details{padding-inline:18px}}

@@ -6,14 +6,21 @@
 <title>Kingdom Seekers Fellowship — Seek Ye First (concept)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="preloader.css?v=1">
 <link rel="stylesheet" href="fixes.css">
 <link rel="stylesheet" href="intro.css">
+<noscript><style>.site-preloader{display:none}</style></noscript>
 </head>
 <body>
+<div class="site-preloader" id="site-preloader" aria-label="Loading Kingdom Seekers Fellowship">
+  <div class="preloader-panel top"></div>
+  <div class="preloader-panel bottom"></div>
+  <div class="preloader-mark"><img src="images/logo.png" alt=""><span class="preloader-line"></span></div>
+</div>
 <header><div class="w nb">
   <a class="br" href="#top"><img src="images/logo.png" alt="KSF logo"><span>Kingdom Seekers<small>Fellowship · Nakuru, Kenya</small></span></a>
-  <nav id="nav"><a href="#top" data-t="home">Home</a><a href="about.html" data-t="about">About Us</a><a href="#" data-soon>Section Fellowship</a><a href="#events" data-t="kev">KSF Events</a><a href="#ministries" data-t="min">Ministries</a><a href="#" data-soon data-t="gift">Gift Shop</a><a href="#contact" data-t="contact">Contact</a><a href="#" data-soon data-t="careers">Careers</a><a class="ng" href="#give" data-t="give">Give</a></nav>
+  <nav id="nav"><a href="#top" data-t="home">Home</a><a href="about.html" data-t="about">About Us</a><a href="section-fellowship.html" data-t="section">Section Fellowship</a><a href="events.html" data-t="kev">KSF Events</a><a href="ministries.html" data-t="min">Ministries</a><a href="gift-shop.html" data-t="gift">Gift Shop</a><a href="contact.html" data-t="contact">Contact</a><a href="careers.html" data-t="careers">Careers</a><a class="ng" href="#give" data-t="give">Give</a></nav>
   <div class="rt"><div class="lg" role="group" aria-label="Language"><button data-l="en" aria-pressed="true">EN</button><button data-l="sw" aria-pressed="false">SW</button></div><a class="btn" href="#give" data-t="give">Give</a><button class="mn" id="mn" aria-label="Menu" aria-expanded="false">☰</button></div>
 </div></header>
 <main id="top">
@@ -62,21 +69,22 @@
 
 <section class="sec" id="pastor" style="padding-top:0"><div class="w"><div class="apo rv"><img src="images/apostle.jpg" alt="Apostle John Kimani William ministering"><div><h2>Apostle John Kimani William</h2><div class="cols"><p>Apostle John Kimani William is the Founder and Senior Pastor of Kingdom Seekers Fellowship, which he leads together with his wife, Rev. Naomi Kimani.</p><p>From Nakuru, the ministry reaches people through prayer at Heaven’s Gate, through MBCI Media, and over the airwaves with Church without Walls.</p></div><div class="row"><a class="btn" href="#contact">Connect with Pastor</a><a class="btn o apo-more" style="color:#fff;border-color:rgba(255,255,255,.7)" href="about.html">About our church</a></div></div></div></div></section><section class="sec" id="give" style="padding-top:0"><div class="w"><div class="give rv">
   <div><span class="eb" style="background:#fff" data-t="give">Give</span><h2>Make a contribution</h2><p style="color:var(--mute);font-size:1.1rem;margin:16px 0 0">Your giving keeps the doors open: worship, outreach and the work of the ministry.</p></div>
-  <div class="mp"><small>Give with M-Pesa</small><div class="chips" id="gc"></div><small>Paybill number</small><div class="no" id="pb">000000</div><small>Account</small><div class="no" id="ac" style="font-size:1.5rem">Offering</div><button class="btn" id="cp">Copy details</button><p style="margin:14px 0 0;color:var(--mute);font-size:.8rem">Sample numbers for this concept. Replace with the church’s real details.</p></div>
+  <div class="mp"><small>Give with M-Pesa</small><div class="chips" id="gc" role="group" aria-label="Choose a giving purpose"></div><div id="giving-details" aria-live="polite"><small>Paybill numbers</small><div class="no payment-values" id="pb">807 100 / 807 101</div><small>Account</small><div class="no account-value" id="ac">Offering</div><small>Send M-Pesa to</small><div class="payment-values mobile-payment" id="mpesa">0706 26 26 26<br>0711 112 112</div><p class="payment-note">For Paybill, use either number with the account shown above. For M-Pesa, send directly to either phone number.</p></div><p class="mission-note" id="mission-note" hidden>For Missions giving details, please contact <a href="mailto:info@ksfchurch.com">info@ksfchurch.com</a>.</p><button class="btn" id="cp" type="button">Copy details</button></div>
 </div></div></section>
 
 
 
 <section class="sec" id="ministries" style="padding-top:0"><div class="w"><div class="hd rv"><div><span class="eb" data-t="min">Ministries</span><h2>One church, many ways to serve</h2></div></div>
-  <div class="mg"><a class="mc rv" href="#" data-soon><img src="images/hg.jpg" alt="Heaven’s Gate"><h3>Heaven’s Gate</h3><p>A place of prayer</p></a><a class="mc rv" href="#" data-soon><img src="images/cww.jpg" alt="Church without Walls"><h3>Church without Walls</h3><p>Bringing hope over airwaves</p></a><a class="mc mc-logo rv" href="#" data-soon><img src="images/mbci.png" alt="MBCI Media"><h3>MBCI Media</h3><p>Transforming lives</p></a><a class="mc rv" href="#" data-soon><img src="images/wrc.jpg" alt="W.R.C"><h3>W.R.C</h3><p>The World Revival Centre</p></a><a class="mc rv" href="#" data-soon><img src="images/band.jpg" alt="Kingdom Band"><h3>Kingdom Band</h3><p>Music ministry</p></a><a class="mc rv" href="#" data-soon><img src="images/voices.jpg" alt="KSF Voices"><h3>KSF Voices</h3><p>Worship ministry</p></a></div></div></section>
+  <div class="mg"><a class="mc rv" href="ministries.html#heavens-gate"><img src="images/hg.jpg" alt="Heaven’s Gate"><h3>Heaven’s Gate</h3><p>A place of prayer</p></a><a class="mc rv" href="ministries.html#church-without-walls"><img src="images/cww.jpg" alt="Church without Walls"><h3>Church without Walls</h3><p>Bringing hope over airwaves</p></a><a class="mc mc-logo rv" href="ministries.html#media-ministry"><img src="images/mbci.png" alt="MBCI Media"><h3>MBCI Media</h3><p>Transforming lives</p></a><a class="mc rv" href="ministries.html#world-revival-centre"><img src="images/wrc.jpg" alt="W.R.C"><h3>W.R.C</h3><p>The World Revival Centre</p></a><a class="mc rv" href="ministries.html#kingdom-band"><img src="images/band.jpg" alt="Kingdom Band"><h3>Kingdom Band</h3><p>Music ministry</p></a><a class="mc rv" href="ministries.html#ksf-voices"><img src="images/voices.jpg" alt="KSF Voices"><h3>KSF Voices</h3><p>Worship ministry</p></a></div></div></section>
 </main>
 <footer id="contact"><div class="w"><div class="fg">
   <div><a class="br" href="#top"><img src="images/logo.png" alt=""><span>Kingdom Seekers<small>Fellowship</small></span></a><p style="margin:16px 0 0;max-width:24rem">Loves God and people. Nakuru, Kenya.</p></div>
-  <div><h4>Contact</h4><a href="tel:+2540111012200">0111 012200</a><a href="#contact">Nakuru, Kenya</a><a href="#" data-soon>Facebook</a><a href="#" data-soon>Instagram</a><a href="#" data-soon>YouTube</a></div>
-  <div><h4>Explore</h4><a href="#visit">Plan a visit</a><a href="#watch">Sermons</a><a href="#events">Events</a><a href="#give">Give</a><a href="#" data-soon>Gift shop</a><a href="#" data-soon>Careers</a></div></div>
+  <div><h4>Contact</h4><a href="contact.html">Contact us</a><a href="mailto:info@ksfchurch.com">info@ksfchurch.com</a><a href="tel:+254111012200">0111 012200</a><a href="#" data-soon>Facebook</a><a href="#" data-soon>Instagram</a><a href="#" data-soon>YouTube</a></div>
+  <div><h4>Explore</h4><a href="#visit">Plan a visit</a><a href="#watch">Sermons</a><a href="section-fellowship.html">Section Fellowship</a><a href="events.html">Events</a><a href="ministries.html">Ministries</a><a href="gift-shop.html">Gift shop</a><a href="careers.html">Careers</a><a href="#give">Give</a></div></div>
   <p class="cp">Concept redesign · photos are taken from the current site and service times are samples.</p></div></footer>
 <nav class="bar" aria-label="Quick actions"><a href="#watch"><span aria-hidden="true">▶</span><span data-t="wl">Watch live</span></a><a href="#visit" data-t="plan2">Visit</a><a class="g" href="#give" data-t="give">Give</a></nav>
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
+<script src="preloader.js?v=1"></script>
 </body>
 </html>
