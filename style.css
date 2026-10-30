@@ -94,9 +94,12 @@ footer .br{color:#fff}footer .br small{color:#a8acd0}.cp{margin:34px 0 0;padding
 .hero .btn.o{color:#fff;border-color:rgba(255,255,255,.7)}.hero .btn.o:hover{background:#fff;color:var(--navy)}
 .visit-strip{padding:18px 0;background:#fff;border-bottom:1px solid var(--line)}
 .visit-strip-inner{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
-.visit-time,.visit-location{display:grid;align-content:center;gap:3px}
+.visit-time,.visit-location{display:grid;align-content:center;gap:3px;min-width:0}
 .visit-time span,.visit-location>span{color:var(--mute);font-size:.76rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 .visit-time strong,.visit-location strong{color:var(--navy);font-size:.98rem;line-height:1.45}
+.visit-times-list{display:grid;gap:5px}
+.visit-times-list>div{display:grid;gap:1px}
+.visit-times-list b{color:var(--navy);font-size:.9rem}
 .visit-location a{color:var(--or2);font-size:.88rem;font-weight:700}
 .visit-location a:hover{text-decoration:underline}
 .sermon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:20px}
@@ -141,7 +144,18 @@ footer .br{color:#fff}footer .br small{color:#a8acd0}.cp{margin:34px 0 0;padding
 @media (max-width:860px){
   .plan .pg{grid-template-columns:1fr !important}
 }
-@media(max-width:700px){.visit-strip-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px}.visit-time strong,.visit-location strong{font-size:.9rem}}
+@media(max-width:700px){
+  .visit-strip{padding:18px 0}
+  .visit-strip-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .visit-time,.visit-location{align-content:start;gap:7px;min-height:120px;padding:14px 12px;border:1px solid var(--line);border-radius:16px;background:var(--iv)}
+  .visit-time span,.visit-location>span{font-size:.65rem;letter-spacing:.035em}
+  .visit-time strong,.visit-location strong{font-size:.88rem}
+  .visit-times-list{gap:7px}
+  .visit-times-list>div{gap:0}
+  .visit-times-list strong{font-size:.78rem}
+  .visit-times-list b{font-size:.85rem}
+  .visit-location a{font-size:.82rem}
+}
 
 /* 2. MBCI Media: show the logo whole instead of cropping it */
 .mc.mc-logo img{
