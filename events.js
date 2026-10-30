@@ -44,9 +44,7 @@ $$('[data-l]').forEach(button => button.addEventListener('click', () => {
   });
   try { localStorage.setItem('ksf-lang', language); } catch (_) {}
 }));
-try {
-  if (localStorage.getItem('ksf-lang') === 'sw') $('[data-l="sw"]').click();
-} catch (_) {}
+
 
 const start = Date.UTC(2026, 10, 2) - 3 * 60 * 60 * 1000;
 const end = Date.UTC(2026, 10, 7) - 3 * 60 * 60 * 1000;

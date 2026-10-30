@@ -47,9 +47,7 @@ $$('[data-l]').forEach(button => button.addEventListener('click', () => {
   });
   try { localStorage.setItem('ksf-lang', language); } catch (_) {}
 }));
-try {
-  if (localStorage.getItem('ksf-lang') === 'sw') $('[data-l="sw"]').click();
-} catch (_) {}
+
 
 function openLinkedMinistry() {
   if (!location.hash) return;

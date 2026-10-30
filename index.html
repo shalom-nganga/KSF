@@ -5,16 +5,17 @@
 <meta name="color-scheme" content="light">
 <link rel="icon" type="image/png" href="images/logo.png">
 <link rel="apple-touch-icon" href="images/logo.png">
-<title>Kingdom Seekers Fellowship — Seek Ye First (concept)</title>
+<title>Kingdom Seekers Fellowship — Seek Ye First</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 <link rel="stylesheet" href="preloader.css?v=1">
 <link rel="stylesheet" href="fixes.css">
 <link rel="stylesheet" href="intro.css">
 <noscript><style>.site-preloader{display:none}</style></noscript>
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 <div class="site-preloader" id="site-preloader" aria-label="Loading Kingdom Seekers Fellowship">
   <div class="preloader-panel top"></div>
   <div class="preloader-panel bottom"></div>
@@ -22,11 +23,17 @@
 </div>
 <header><div class="w nb">
   <a class="br" href="#top"><img src="images/logo.png" alt="KSF logo"><span>Kingdom Seekers<small>Fellowship · Nakuru, Kenya</small></span></a>
-  <nav id="nav"><a href="#top" data-t="home">Home</a><a href="about.html" data-t="about">About Us</a><a href="section-fellowship.html" data-t="section">Section Fellowship</a><a href="events.html" data-t="kev">KSF Events</a><a href="ministries.html" data-t="min">Ministries</a><a href="gift-shop.html" data-t="gift">Gift Shop</a><a href="contact.html" data-t="contact">Contact</a><a href="careers.html" data-t="careers">Careers</a><a class="ng" href="#give" data-t="give">Give</a></nav>
-  <div class="rt"><div class="lg" role="group" aria-label="Language"><button data-l="en" aria-pressed="true">EN</button><button data-l="sw" aria-pressed="false">SW</button></div><a class="btn" href="#give" data-t="give">Give</a><button class="mn" id="mn" aria-label="Menu" aria-expanded="false">☰</button></div>
+  <nav id="nav"><a href="#top" data-t="home">Home</a><a href="about.html" data-t="about">About Us</a><a href="section-fellowship.html" data-t="section">Section Fellowship</a><a href="events.html" data-t="kev">KSF Events</a><a href="ministries.html" data-t="min">Ministries</a><details class="nav-more"><summary>More</summary><div class="nav-more-menu"><a href="gift-shop.html">Gift Shop</a><a href="careers.html">Careers</a></div></details><a href="contact.html" data-t="contact">Contact</a><a class="ng" href="#give" data-t="give">Give</a></nav>
+  <div class="rt"><a class="btn" href="#give" data-t="give">Give</a><button class="mn" id="mn" aria-label="Menu" aria-expanded="false">☰</button></div>
 </div></header>
-<main id="top">
-<section class="hero" style="--hb:url(images/hero.jpg)"><span class="eb" data-t="eb">Kingdom Seekers Fellowship</span><div class="w"><h1 class="rv"><span data-t="h1a">Seek Ye</span> <em data-t="h1b">First.</em></h1><div class="row rv"><a class="btn" href="#visit" data-t="plan">Plan your visit</a><a class="btn o" href="#watch"><span aria-hidden="true">▶</span><span data-t="wl">Watch live</span></a></div></div></section>
+<main id="top" tabindex="-1">
+<section class="hero" style="--hb:url(images/hero.jpg)"><span class="eb" data-t="eb">Kingdom Seekers Fellowship</span><div class="w"><h1 class="rv"><span data-t="h1a">Seek Ye</span> <em data-t="h1b">First.</em></h1><div class="row rv"><a class="btn" href="#visit" data-t="plan">Plan your visit</a><a class="btn o" href="https://www.youtube.com/live/AlnOnlBDe-4" target="_blank" rel="noopener"><span aria-hidden="true">▶</span><span data-t="wl">Watch live</span></a></div></div></section>
+<section class="visit-strip" aria-label="Service times and location"><div class="w visit-strip-inner">
+  <div class="visit-time"><span>Weekdays · Monday–Friday</span><strong>Morning Devotion 5:30 AM<br>Lunch Hour 12:30 PM</strong></div>
+  <div class="visit-time"><span>Sunday Service</span><strong>9:30 AM</strong></div>
+  <div class="visit-time"><span>Friday Kesha</span><strong>9:30 PM</strong></div>
+  <div class="visit-location"><span>Join us at</span><strong>KSF Cathedral, Nakuru</strong><a href="https://maps.app.goo.gl/TbEkT7DkS5dyrQYf7" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a></div>
+</div></section>
 
 <section class="sec" id="intro"><div class="w">
   <div class="hd rv"><div><h2 data-t="wel">Welcome to Kingdom Seekers Fellowship</h2></div></div>
@@ -50,8 +57,12 @@
 <section class="sec" id="visit"><div class="w"><div class="plan rv"><div class="pg"><div class="pl"><span class="eb" style="background:rgba(255,255,255,.12);color:#fff" data-t="visit">Visit</span><h2 data-t="pv">Plan your first visit</h2><p>Pick a service and we’ll tell you what to expect.</p><div class="q"><h4>Which service?</h4><div class="opts" id="o1"></div></div></div><div class="res" id="res"></div></div></div></div></section>
 
 <section class="sec" id="watch" style="padding-top:0"><div class="w">
-  <div class="hd rv"><div><span class="eb" data-t="watch">Watch</span><h2>Latest sermons</h2></div><div class="chips" id="sf" role="group" aria-label="Filter sermons"></div></div>
-  <div class="gr" id="sg"></div></div></section>
+  <div class="hd rv"><div><span class="eb" data-t="watch">Watch</span><h2>Recent sermons</h2><p class="lede">Watch messages from Kingdom Seekers Fellowship.</p></div><a class="btn" href="https://www.youtube.com/live/AlnOnlBDe-4" target="_blank" rel="noopener">Watch the live stream</a></div>
+  <div class="sermon-grid">
+    <article class="sermon-video"><h3>Exercising Spiritual Authority Through Intercession For Kenya</h3><div class="sermon-frame"><iframe src="https://www.youtube-nocookie.com/embed/kAkUTLgUu5A" title="Exercising Spiritual Authority Through Intercession For Kenya with Pastor Jacqueline Thuku" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p>Pastor Jacqueline Thuku</p></article>
+    <article class="sermon-video"><h3>Dominion In The Market Place</h3><div class="sermon-frame"><iframe src="https://www.youtube-nocookie.com/embed/6mT-dvRvgkk" title="Dominion In The Market Place with Pastor John Kamau" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p>Pastor John Kamau</p></article>
+    <article class="sermon-video"><h3>Blessed in your Own Capacity</h3><div class="sermon-frame"><iframe src="https://www.youtube-nocookie.com/embed/06IvVv1Q7FU" title="Blessed in your Own Capacity with Pastor Paul Mwangi" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p>Pastor Paul Mwangi</p></article>
+  </div></div></section>
 
 <section class="sec" id="events" style="background:var(--sand)"><div class="w"><div class="hd rv"><div><span class="eb" style="background:#fff" data-t="kev">KSF Events</span><h2>Coming up</h2></div></div>
 <article class="fest rv" id="fest"><button class="fl" id="flb" type="button" aria-label="View the flyer larger"><img src="images/flyer.jpg" alt="Flyer: November Word and Prayer Festival, 2nd to 6th November 2026"></button>
@@ -80,12 +91,12 @@
 </main>
 <footer id="contact"><div class="w"><div class="fg">
   <div><a class="br" href="#top"><img src="images/logo.png" alt=""><span>Kingdom Seekers<small>Fellowship</small></span></a><p style="margin:16px 0 0;max-width:24rem">Loves God and people. Nakuru, Kenya.</p></div>
-  <div><h4>Contact</h4><a href="contact.html">Contact us</a><a href="mailto:info@ksfchurch.com">info@ksfchurch.com</a><a href="tel:+254111012200">0111 012200</a><a href="#" data-soon>Facebook</a><a href="#" data-soon>Instagram</a><a href="#" data-soon>YouTube</a></div>
+  <div><h4>Contact</h4><a href="contact.html">Contact us</a><a href="mailto:info@ksfchurch.com">info@ksfchurch.com</a><a href="tel:+254111012200">0111 012200</a><a href="https://maps.app.goo.gl/TbEkT7DkS5dyrQYf7" target="_blank" rel="noopener">KSF Cathedral, Nakuru · Directions</a><a href="#" data-soon>Facebook</a><a href="#" data-soon>Instagram</a><a href="#" data-soon>YouTube</a></div>
   <div><h4>Explore</h4><a href="#visit">Plan a visit</a><a href="#watch">Sermons</a><a href="section-fellowship.html">Section Fellowship</a><a href="events.html">Events</a><a href="ministries.html">Ministries</a><a href="gift-shop.html">Gift shop</a><a href="careers.html">Careers</a><a href="#give">Give</a></div></div>
-  <p class="cp">Concept redesign · photos are taken from the current site and service times are samples.</p></div></footer>
-<nav class="bar" aria-label="Quick actions"><a href="#watch"><span aria-hidden="true">▶</span><span data-t="wl">Watch live</span></a><a href="#visit" data-t="plan2">Visit</a><a class="g" href="#give" data-t="give">Give</a></nav>
+  <p class="cp">Kingdom Seekers Fellowship · Nakuru, Kenya.</p></div></footer>
+<nav class="bar" aria-label="Quick actions"><a href="https://www.youtube.com/live/AlnOnlBDe-4" target="_blank" rel="noopener"><span aria-hidden="true">▶</span><span data-t="wl">Watch live</span></a><a href="#visit" data-t="plan2">Visit</a><a class="g" href="#give" data-t="give">Give</a></nav>
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 <script src="preloader.js?v=1"></script>
 </body>
 </html>

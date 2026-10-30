@@ -44,8 +44,6 @@ $$('[data-l]').forEach(b => b.onclick = () => {
   $$('[data-t]').forEach(e => e.textContent = (sw ? SW : EN)[e.dataset.t] || e.textContent);
   try { localStorage.setItem('ksf-lang', b.dataset.l); } catch (_) {}
 });
-try { if (localStorage.getItem('ksf-lang') === 'sw') $('[data-l="sw"]').click(); } catch (_) {}
-
 /* reveal on scroll */
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
 $$('.rv').forEach(r => io.observe(r));
