@@ -123,6 +123,11 @@ footer .br{color:#fff}footer .br small{color:#a8acd0}.cp{margin:34px 0 0;padding
 @media(min-width:860px){.apo{grid-template-columns:minmax(0,360px) 1fr;gap:56px}}
 .apo img{width:100%;max-width:360px;aspect-ratio:4/4.7;object-fit:cover;margin-inline:auto;border-radius:26px;box-shadow:0 26px 50px rgba(0,0,0,.35)}
 .apo h2{margin-bottom:18px;color:#fff}.apo .cols{columns:1;column-gap:34px;margin-bottom:22px}@media(min-width:1000px){.apo .cols{columns:2}}.apo p{margin:0 0 1em;color:#d4d6ea;break-inside:avoid}
+.apo-socials{display:flex;gap:9px;margin:0 0 16px}
+.apo-socials a{display:grid;place-items:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.82);border-radius:3px;color:#fff;transition:background .2s,color .2s,transform .2s}
+.apo-socials a:hover{transform:translateY(-2px);background:#fff;color:var(--navy)}
+.apo-socials svg{width:18px;height:18px;fill:currentColor}
+.apo-socials svg rect,.apo-socials svg circle{fill:none}
 .mg{grid-template-columns:repeat(2,1fr)}@media(min-width:900px){.mg{grid-template-columns:repeat(3,1fr)}}@media(max-width:480px){.mc img{width:84px;height:84px}.mc{padding:20px 12px}}
 #toast{position:fixed;left:50%;bottom:96px;z-index:80;padding:12px 22px;border-radius:99px;background:var(--navy);color:#fff;font-size:.9rem;opacity:0;transform:translate(-50%,16px);transition:opacity .3s,transform .3s;pointer-events:none}#toast.on{opacity:1;transform:translate(-50%,0)}
 
